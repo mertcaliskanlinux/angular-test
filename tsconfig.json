@@ -19,6 +19,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "strictPropertyInitialization":false, //  "strictPropertyInitialization":false eklencek prototype error için 
     "lib": [
       "ES2022",
       "dom"

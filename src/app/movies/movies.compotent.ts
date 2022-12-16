@@ -1,21 +1,21 @@
 import { Component } from "@angular/core";
+import { Movies } from "../movie.datasource";
 import { Movie } from "../movie";
+
 
 @Component({
     selector:'movies', //<movies></movies>    
     templateUrl:'./movies.component.html',    
-    styleUrls:['./movies.compotent.css']
+    styleUrls:['./movies.component.css']
+    // ,'../app.style.css'
 })
 
-export class MoviesComponent{
-    title = 'Film Listesi'
-
-    movie : Movie = {
-        id :1,
-        name : 'Movie Name'
-    };
-
-    getTitle(){
-        return this.title
+export class MoviesComponent {
+    title = 'Film Listesi';
+    movies = Movies;
+    selectedMovie: Movie;
+    
+    onSelect(movie: Movie): void {
+        this.selectedMovie = movie;
     }
 }

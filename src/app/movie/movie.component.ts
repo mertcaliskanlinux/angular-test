@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Movies } from '../movie.datasource';
 @Component({
   selector: 'movie',
   templateUrl: './movie.component.html',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class MovieComponent {
+
+  title = 'Film Listesi'
+  movie = Movies;
 
 }
