@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {  MovieComponent } from './movie/movie.component';
 import { MoviesComponent } from './movies/movies.compotent';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     MoviesComponent,
+    MovieDetailComponent,
 
   ],
   imports: [
